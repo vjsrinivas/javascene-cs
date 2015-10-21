@@ -1,7 +1,10 @@
-public class JavaScene
+import java.awt.*;
+import java.applet.*;
+
+public class JavaScene extends Applet
 {
-  public static void main(String args[])
+  public void main(Graphics g)
   {
-  
+     DJStand.drawDJStand(g); 
   }
 }
