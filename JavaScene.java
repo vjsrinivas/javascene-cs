@@ -3,7 +3,7 @@ import java.applet.*;
 
 public class JavaScene extends Applet
 {
-  public void main(Graphics g)
+  public void paint(Graphics g)
   {
      DJStand.drawDJStand(g); 
   }
