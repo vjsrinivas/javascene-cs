@@ -7,6 +7,7 @@ class DJStand
       {
          g.setColor(new Color(0,0,0)); //black cock
          g.fillRect(150,400,500,50);
+         
       }
      
    }
