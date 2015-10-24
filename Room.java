@@ -28,5 +28,6 @@ class Room
       g.drawLine(650,150,800,0);
       g.drawLine(650,450,800,600);
       
+      
    }
 }  
