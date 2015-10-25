@@ -27,8 +27,7 @@ class Room
       g.drawLine(0,600,150,450);
       g.drawLine(650,150,800,0);
       g.drawLine(650,450,800,600);
-      
-      
+            
    }
    
    public static void drawFloor(Graphics g)
