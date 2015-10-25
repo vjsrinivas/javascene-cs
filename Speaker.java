@@ -17,12 +17,12 @@ class Speaker
       int rangecoor = 20 + ((60 - size)/2);
       int rangecoor2 = 20 + ((60 - size2)/2);
       
-      g.setColor(new Color(255,255,255));
+      g.setColor(new Color(100,100,100));
       g.fillOval(x + 20, y + 20, 60, 60);
       g.fillOval(x + 20, y + 220, 60, 60);
       g.fillOval(x + 20, y + 125, 60,60);
       
-      g.setColor(new Color(155,155,155));
+      g.setColor(new Color(50,50,50));
       g.fillOval(x + rangecoor, y + rangecoor, size, size);
       g.fillOval(x + rangecoor, y + rangecoor + 200, size, size);
       g.fillOval(x + rangecoor2, y + rangecoor2 + 105, size2, size2);
