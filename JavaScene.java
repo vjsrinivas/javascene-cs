@@ -18,7 +18,7 @@
 //|      Lukas Marinovic                            |//
 //|         https://github.com/LukasMMarinovic      |//
 //|      Alejandro Scroggs                          |//
-//|                                                 |//
+//|         https://github.com/handroishonda        |//
 //|=================================================|//
 
 import java.awt.*;
@@ -55,7 +55,9 @@ public class JavaScene extends Applet
      Room.drawWalls(g);
      DJ.drawDJ(g);
      DJStand.drawDJStand(g);
+     DJStand.drawEqualizer(g);
      Room.drawFloor(g);
+     
      
      int[] painting1 = {30,200, 30,400, 100,350, 100,250};
      Speaker.drawSpeaker(g,150,150);
@@ -66,6 +68,7 @@ public class JavaScene extends Applet
      Decor.drawProjectors(g, 375, 105, 100, 501);
      Decor.drawProjectors(g, 600, 105, 140, 701);
      Decor.drawMoneyWaster(g, painting1);
+     
      //prevent seizures
      try 
      {
