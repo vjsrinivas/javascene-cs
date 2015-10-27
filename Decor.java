@@ -57,4 +57,27 @@ class Decor
       g.fillPolygon(art);             
    }
    
+   
+   public static void drawCeilingLights(Graphics g)
+   {
+
+      int red;
+      int green;
+      int blue;
+      
+      for(int k=0; k <= 30; k++)
+      {
+         int positionX = (int)((Math.random() * 500)+130);
+         int positionY = (int)((Math.random() * 130));
+         int length = (int)((Math.random() * 8)+20);
+         int width = (int)((Math.random() * 4)+4);
+         red = 30;
+         green  = ((int) ((Math.random()*45)+109));
+         blue = ((int) ((Math.random()*62)+100));;          
+         g.setColor(new Color(red,green,blue,160)); 
+
+         g.fillOval(positionX,positionY,length,width);
+         
+      }
+   }  
 }

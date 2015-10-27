@@ -1,3 +1,26 @@
+//|=======================}//
+//| JavaScene             |//
+//|                       |//
+//| This program displays |//
+//| a scene using Java    |//
+//| graphics.             |//
+//|=======================|//
+
+//|=================================================|//
+//|Scratch-A-Bear inc.                              |//
+//|                                                 |//
+//|please visit:                                    |//
+//|      http://www.scratch-a-bear.edu              |//
+//|                                                 |//
+//|Developers:                                      |//
+//|      Vijaysrinivas Rajagopal                    |//
+//|                                                 |//
+//|      Lukas Marinovic                            |//
+//|         https://github.com/LukasMMarinovic      |//
+//|      Alejandro Scroggs                          |//
+//|                                                 |//
+//|=================================================|//
+
 import java.awt.*;
 import java.applet.*;
 import javafx.scene.media.Media;
@@ -37,6 +60,7 @@ public class JavaScene extends Applet
      int[] painting1 = {30,200, 30,400, 100,350, 100,250};
      Speaker.drawSpeaker(g,150,150);
      Speaker.drawSpeaker(g, 550, 150);
+     Decor.drawCeilingLights(g);
      Decor.drawRails(g);
      Decor.drawProjectors(g, 150, 105, 140, 301);
      Decor.drawProjectors(g, 375, 105, 100, 501);
