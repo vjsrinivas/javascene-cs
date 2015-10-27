@@ -34,7 +34,7 @@ public class JavaScene extends Applet
      DJStand.drawDJStand(g);
      Room.drawFloor(g);
      
-     int[] painting1 = {100,200, 125,210, 230,240, 230,100};
+     int[] painting1 = {30,200, 30,400, 100,350, 100,250};
      Speaker.drawSpeaker(g,150,150);
      Speaker.drawSpeaker(g, 550, 150);
      Decor.drawRails(g);

@@ -48,8 +48,13 @@ class Decor
       art.addPoint(coorls[2], coorls[3]);
       art.addPoint(coorls[4], coorls[5]);
       art.addPoint(coorls[6], coorls[7]);
-      g.setColor(new Color(200, 200, 250));
-      g.fillPolygon(art);   
+      
+      int redran, blueran, greenran;      
+      redran = (int)(Math.random() * 255);  
+      blueran = (int)(Math.random() * 255);
+      greenran = (int)(Math.random() * 255);
+      g.setColor(new Color(redran, blueran, greenran));
+      g.fillPolygon(art);             
    }
    
 }
