@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.applet.*;
 
-class Lazers
+class Decor
 {
    public static void drawRails(Graphics g)
    {
@@ -44,7 +44,7 @@ class Lazers
    public static void drawMoneyWaster(Graphics g, int[] coorls)
    {
       Polygon art = new Polygon();
-      art.addPoint(coorls[0], coorls[1]);
+      art.addPoint(coorls[0],coorls[1]);
       art.addPoint(coorls[2], coorls[3]);
       art.addPoint(coorls[4], coorls[5]);
       art.addPoint(coorls[6], coorls[7]);
