@@ -10,7 +10,7 @@ class Room
       int blue;
       
       //set canvas color and draw background
-      g.setColor(new Color(110,110,110));
+      g.setColor(new Color(60,60,60));
       g.fillRect(0,0,800,600);
       
       //generate random bluish color...
