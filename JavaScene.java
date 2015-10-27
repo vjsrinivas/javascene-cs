@@ -33,12 +33,15 @@ public class JavaScene extends Applet
      DJ.drawDJ(g);
      DJStand.drawDJStand(g);
      Room.drawFloor(g);
+     
+     int[] painting1 = {100,200, 125,210, 230,240, 230,100};
      Speaker.drawSpeaker(g,150,150);
      Speaker.drawSpeaker(g, 550, 150);
      Lazers.drawRails(g);
      Lazers.drawProjectors(g, 150, 105, 140, 301);
      Lazers.drawProjectors(g, 375, 105, 100, 501);
      Lazers.drawProjectors(g, 600, 105, 140, 701);
+     Lazers.drawMoneyWaster(g, painting1);
      //prevent seizures
      try 
      {

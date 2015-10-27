@@ -40,4 +40,16 @@ class Lazers
       
       g.fillPolygon(lzbody);
    }
+   
+   public static void drawMoneyWaster(Graphics g, int[] coorls)
+   {
+      Polygon art = new Polygon();
+      art.addPoint(coorls[0], coorls[1]);
+      art.addPoint(coorls[2], coorls[3]);
+      art.addPoint(coorls[4], coorls[5]);
+      art.addPoint(coorls[6], coorls[7]);
+      g.setColor(new Color(200, 200, 250));
+      g.fillPolygon(art);   
+   }
+   
 }
