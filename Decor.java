@@ -67,6 +67,7 @@ class Decor
       
       for(int k=0; k <= 30; k++)
       {
+         
          int positionX = (int)((Math.random() * 500)+130);
          int positionY = (int)((Math.random() * 130));
          int length = (int)((Math.random() * 8)+20);

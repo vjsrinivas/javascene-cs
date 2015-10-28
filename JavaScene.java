@@ -37,7 +37,7 @@ public class JavaScene extends Applet
    {
       AudioInputStream audioInputStream =
       AudioSystem.getAudioInputStream(
-      this.getClass().getResource("./javascene-cs/Kalimba.mp3"));
+      this.getClass().getResource("Kalimba.wav"));
       Clip clip = AudioSystem.getClip();
       clip.open(audioInputStream);
       clip.start();
@@ -45,7 +45,12 @@ public class JavaScene extends Applet
    catch(Exception ex)
    {
    
-   }
+   } 
+   
+   
+   
+   
+   
   }
    
   public void paint(Graphics g)
