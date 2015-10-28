@@ -28,11 +28,13 @@ import javafx.scene.media.MediaPlayer;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
+ 
 
 public class JavaScene extends Applet
-{
+{  
   public void init()
-  {
+  {  
+  //play music
    try
    {
       AudioInputStream audioInputStream =
@@ -45,25 +47,22 @@ public class JavaScene extends Applet
    catch(Exception ex)
    {
    
-   } 
-   
-   
-   
-   
-   
+   }      
   }
-   
+   //remove white flickers
+   public void update(Graphics g)
+   {
+   paint(g); 
+   }      
   public void paint(Graphics g)
-  {
+  { 
      //Draw components
      setSize(800,600);
      Room.drawWalls(g);
      DJ.drawDJ(g);
      DJStand.drawDJStand(g);
      DJStand.drawEqualizer(g);
-     Room.drawFloor(g);
-     
-     
+     Room.drawFloor(g);            
      int[] painting1 = {30,200, 30,400, 100,350, 100,250};
      Speaker.drawSpeaker(g,150,150);
      Speaker.drawSpeaker(g, 550, 150);
@@ -73,11 +72,11 @@ public class JavaScene extends Applet
      Decor.drawProjectors(g, 375, 105, 100, 501);
      Decor.drawProjectors(g, 600, 105, 140, 701);
      Decor.drawMoneyWaster(g, painting1);
-     
+    
      //prevent seizures
      try 
      {
-         Thread.sleep(250);                 
+         Thread.sleep(350);                 
      } 
          catch(InterruptedException ex)
      {
@@ -86,6 +85,5 @@ public class JavaScene extends Applet
           
      //loopity-looop             
      repaint();
-  }
-  
+  }  
 }
