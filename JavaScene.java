@@ -72,6 +72,7 @@ public class JavaScene extends Applet
      Decor.drawProjectors(g, 150, 105, 140, 301);
      Decor.drawProjectors(g, 375, 105, 100, 501);
      Decor.drawProjectors(g, 600, 105, 140, 701);
+     Decor.drawRandomWallLinesBoyssssss(g);
             //Decor.drawMoneyWaster(g, painting1);
      Environment.drawCrowd(g, 0);
      Environment.drawCrowd(g, 255);

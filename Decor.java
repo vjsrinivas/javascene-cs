@@ -89,4 +89,24 @@ class Decor
       g.drawString("Sakul",385,100);
 
    }  
+    public static void drawRandomWallLinesBoyssssss(Graphics g)
+    {
+      for(int t=0; t<=20; t+=1)
+      {
+      
+         int red;
+         int green;
+         int blue;
+         red = 30;
+         green  = ((int) ((Math.random()*45)+109));
+         blue = ((int) ((Math.random()*62)+100));;          
+         g.setColor(new Color(red,green,blue,160));
+         
+         int y1 = (int)(Math.random()*600);
+         int y2 = (int)((Math.random()*300)+150);
+         
+         g.drawLine(0,y1,150,y2);
+         g.drawLine(800,y1,650,y2);
+      }
+     }
 }
