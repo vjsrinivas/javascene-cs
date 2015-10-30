@@ -14,7 +14,7 @@
 //|                                                 |//
 //|Developers:                                      |//
 //|      Vijaysrinivas Rajagopal                    |//
-//|                                                 |//
+//|         https://github.com/MedicAlert           |//
 //|      Lukas Marinovic                            |//
 //|         https://github.com/LukasMMarinovic      |//
 //|      Alejandro Scroggs                          |//
@@ -68,14 +68,17 @@ public class JavaScene extends Applet
      Speaker.drawSpeaker(g,150,150);
      Speaker.drawSpeaker(g, 550, 150);
      Decor.drawCeilingLights(g);
+     Decor.drawRandomWallLinesBoyssssss(g);
      Decor.drawRails(g);
      Decor.drawProjectors(g, 150, 105, 140, 301);
      Decor.drawProjectors(g, 375, 105, 100, 501);
      Decor.drawProjectors(g, 600, 105, 140, 701);
-     Decor.drawRandomWallLinesBoyssssss(g);
+     
             //Decor.drawMoneyWaster(g, painting1);
-     Environment.drawCrowd(g, 0);
-     Environment.drawCrowd(g, 255);
+     Environment.drawCrowd(g, 0, 20);
+     Environment.drawCrowd(g, 255, 10);
+     Environment.drawCrowd(g, 510, 10);
+     Environment.drawCrowd(g, 765, 20);
      
      //prevent seizures
      try 
