@@ -23,8 +23,8 @@ class Environment
      crowd.addPoint(240+x,490);
      crowd.addPoint(255+x,560);
      crowd.addPoint(255+x,600);
-     rgb = (int)(Math.random() * 20);      
-     g.setColor(new Color(rgb, rgb, rgb));
+          
+     g.setColor(new Color(15, 15, 15));
      g.fillPolygon(crowd);
      
      

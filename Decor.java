@@ -64,12 +64,14 @@ class Decor
       int red;
       int green;
       int blue;
+      int positionX;
+      int positionY;
       
       for(int k=0; k <= 30; k++)
       {
          
-         int positionX = (int)((Math.random() * 500)+130);
-         int positionY = (int)((Math.random() * 130));
+         positionX = (int)((Math.random() * 500)+130);
+         positionY = (int)((Math.random() * 130));
          int length = (int)((Math.random() * 8)+20);
          int width = (int)((Math.random() * 4)+4);
          red = 30;
@@ -78,7 +80,13 @@ class Decor
          g.setColor(new Color(red,green,blue,160)); 
 
          g.fillOval(positionX,positionY,length,width);
-         
+
+
       }
+
+      int fontSize = 20;
+      g.setFont(new Font("Comic Sans MS",Font.PLAIN,fontSize));
+      g.drawString("Sakul",385,100);
+
    }  
 }

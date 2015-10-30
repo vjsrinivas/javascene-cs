@@ -64,7 +64,7 @@ public class JavaScene extends Applet
      DJStand.drawEqualizer(g);
      DJStand.drawIndianStuff(g);
      Room.drawFloor(g);            
-     int[] painting1 = {30,200, 30,400, 100,350, 100,250};
+            //int[] painting1 = {30,200, 30,400, 100,350, 100,250};
      Speaker.drawSpeaker(g,150,150);
      Speaker.drawSpeaker(g, 550, 150);
      Decor.drawCeilingLights(g);
@@ -72,7 +72,7 @@ public class JavaScene extends Applet
      Decor.drawProjectors(g, 150, 105, 140, 301);
      Decor.drawProjectors(g, 375, 105, 100, 501);
      Decor.drawProjectors(g, 600, 105, 140, 701);
-     Decor.drawMoneyWaster(g, painting1);
+            //Decor.drawMoneyWaster(g, painting1);
      Environment.drawCrowd(g, 0);
      Environment.drawCrowd(g, 255);
      
