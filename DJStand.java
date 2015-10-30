@@ -35,9 +35,20 @@ class DJStand
       {
          g.setColor(new Color(0,0,0));
          g.fillRect(425,333,80,65);  //background rectangle
+         
+         //Block code for multi-gradient
+         Graphics2D g2 = (Graphics2D) g;
+         
+         GradientPaint primary = new GradientPaint(
+         430, 335, new Color(231, 76, 60), 430, 350, new Color(241, 196, 15));
+         
+         GradientPaint shade = new GradientPaint(
+         430, 360, new Color(0, 0, 0, 0),
+         430, 375, new Color(46, 204, 113));;
+         //
+            
          for(int t=0; t<=60; t+=12)
          {
-         
             int yDifference = 0;
             int barHeight = (int)(Math.random() * 5);
             int height = 0;
@@ -46,28 +57,25 @@ class DJStand
                
                case 0: height = 12;
                        yDifference = 48;
-                       g.setColor(new Color(2,247,7));   //green
                        break;
                case 1: height = 24;
                        yDifference = 36;
-                       g.setColor(new Color(170,247,2)); //little less green
                        break;
                case 2: height = 36;
                        yDifference = 24;
-                       g.setColor(new Color(235,247,2)); //little more yellow
                        break;
                case 3: height = 48;
                        yDifference = 12;
-                       g.setColor(new Color(247,125,2)); //little more orange
                        break;
                case 4: height = 60;
                        yDifference = 0;
-                       g.setColor(new Color(247,43,2));  //red
                        break;
                        
-            }
-         
-         g.fillRect((430 + t),(335 + yDifference),10,height);  //bars
+            }            
+            g2.setPaint(primary);
+            g2.fillRect((430 + t),(335 + yDifference),10,height);  //bars            
+            g2.setPaint(shade);
+            g2.fillRect((430 + t),(335 + yDifference),10,height);
          }
          g.setColor(new Color(0,0,0));   //rectangles dividing bars into rectangles
          g.fillRect(425,340,80,2);
