@@ -103,7 +103,7 @@ class DJStand
         
         g.setColor(new Color(0,0,160));    //India blue
         int fontSize = 20;
-        g.setFont(new Font("Comic Sans",Font.PLAIN,fontSize));
+        g.setFont(new Font("Comic Sans MS",Font.PLAIN,fontSize));
         g.drawString("DiJay",322,373);
         
             
